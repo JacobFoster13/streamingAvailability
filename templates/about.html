@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="{{url_for('index')}}">StreamingAvailability</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
+      aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="{{url_for('index')}}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('actors')}}">Actors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('movies')}}">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('tvshows')}}">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('about')}}"><u>About Us</u></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('models')}}">Models</a>
+                </li>
+                </ul>
+              </div>
+          </nav>
+
+        <div class="container">
+            <h1 class="text-center">About Us</h1>
+            <div class="text-center">
+                <p>Welcome to StreamingAvailability, your go-to source for finding the latest and greatest movies and TV shows available on your favorite streaming services.</p>
+                <p>We understand that finding something to watch can be a daunting task, especially when you have multiple streaming subscriptions. That's why we created StreamingAvailability  to help you quickly and easily discover what's available to watch on all of your streaming platforms.</p>
+            </div>
+            <div class="row">
+                <h2 class="text-center">Creators</h2>
+                <div class="col-3 card h-100 text-center">
+                    <img class="pt-2" src="../static/img/will_archer.gif" alt="">
+                    <h2>Will Archer</h2>
+                    <p>Front-end, Back-end</p>
+                    <p>I am a Senior at The University of Texas studying economics. I am from Dallas and expect to graduate in May, 2023. I enjoy web development, wake boarding, and pickleball.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><u>Commits</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitCommit.png" alt="">
+                            <p id="commit-count-Will">Filler till I hook up gitlab API</p>
+                        </div>
+                        <div class="col-6">
+                            <p><u>Issues</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitIssues.png" alt="">
+                            <p id="issue-count-Will">Filler till I hook up gitlab API</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 card h-100 text-center">
+                    <img class="pt-2" src="../static/img/jacob.jpeg" alt="picture of Jacob Foster">
+                    <h2>Jacob Foster</h2>
+                    <p>Project Manager, Front-end, Back-end</p>
+                    <p>I am a senior at the University of Texas at Austin studying Management Information Systems. I am from Houston, Texas and I am graduating in May 2023. Some of my favorite things to do include playing baseball, building legos, and working out.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><u>Commits</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitCommit.png" alt="">
+                            <p id="commit-count-Jacob">Filler till I hook up gitlab API</p>
+                        </div>
+                        <div class="col-6">
+                            <p><u>Issues</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitIssues.png" alt="">
+                            <p id="issue-count-Jacob">Filler till I hook up gitlab API</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 card h-100 text-center">
+                    <img class="pt-2" src="../static/img/yvette.jpg" alt="">
+                    <h2>Yvette Arellano</h2>
+                    <p>Front-end</p>
+                    <p>I am a Senior at The University of Texas studying Management Information Systems. I am from Houston and expect to graduate in May 2023. I enjoy being active with tennis and swimming, crocheting, and gardening.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><u>Commits</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitCommit.png" alt="">
+                            <p id="commit-count-Yvette">Filler till I hook up gitlab API</p>
+                        </div>
+                        <div class="col-6">
+                            <p><u>Issues</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitIssues.png" alt="">
+                            <p id="issue-count-Yvette">Filler till I hook up gitlab API</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 card h-100 text-center">
+                    <img class="pt-2" src="../static/img/greg.JPG" alt="">
+                    <h2>Gregory Colonescu</h2>
+                    <p>Front-end</p>
+                    <p>I am a Senior at The University of Texas studying finance and mathematics. I am from Plano and expect to graduate in May, 2023. I enjoy fencing, voter engagement and quantitative finance.</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-6">
+                            <p><u>Commits</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitCommit.png" alt="">
+                            <p id="commit-count-Gregory">Filler till I hook up gitlab API</p>
+                        </div>
+                        <div class="col-6">
+                            <p><u>Issues</u></p>
+                            <img class="img-fluid w-25" src="../static/img/gitIssues.png" alt="">
+                            <p id="issue-count-Gregory">Filler till I hook up gitlab API</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container text-center">
+                <button id="unittestButton" class="btn btn-primary" onclick="toggleImage()">Show Unit Test Results</button>
+                <br>
+                <div id="myImage" style="display: none; margin-left: auto; margin-right: auto">
+                    <img src="../static/img/csTestProof2.PNG" style="max-width: 40%;">
+                    <img src="../static/img/postmanTest.PNG" style="max-width: 40%;">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <h2 class="text-center">Technologies Used</h2>
+                <div class="row">
+                    <div class="col-4 text-center card h-100">HTML
+                        <img src="../static/img/html-5.png" class="img-fluid w-25 mx-auto d-block p-3" alt="">
+                    </div>
+                    <div class="col-4 text-center card h-100">Bootstrap
+                        <img src="../static/img/bootstrap.png" class="img-fluid w-25 mx-auto d-block p-3" alt="">
+                    </div>
+                    <div class="col-4 text-center card h-100">Flask
+                        <img src="../static/img/python.png" class="img-fluid w-25 mx-auto d-block p-3" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 text-center card h-100">GitLab
+                        <img src="../static/img/gitlab.png" class="img-fluid w-25 mx-auto d-block p-3" alt="">
+                    </div>
+                    <div class="col-4 text-center card h-100">JavaScript
+                        <img src="../static/img/js.png" class="img-fluid w-25 mx-auto d-block p-3" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <h3>Data</h3>
+                <h6><a href="https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/" target="_blank">StreamingAvailabilty - RapidAPI</a></h6>
+                <h6><a href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank">The Movie Database API</a></h6>
+                <br>
+                <h3>Team Stats</h3>
+                <h6>Total Commits: <span id="totalCommits">at least 7</span></h6>
+                <h6>Total Issues: <span id="totalIssues">at least 7</span></h6>
+                <h6>Total Unit Tests: 8 Gitlab, 16 Postman</h6>
+                <br>
+                <h3>Info</h3>
+                <h6><a href="https://gitlab.com/jacobfoster/cs331e-idb/-/wikis/StreamingAvailabilty-Group-14:-Will-Archer,-Yvette-Arellano,-Gregory-Colonescu,-Jacob-Foster" target="_blank">Wiki</a></h3>
+                <h6><a href="https://gitlab.com/jacobfoster/cs331e-idb" target="_blank">Repo</a></h3>
+                <h6><a href="https://gitlab.com/jacobfoster/cs331e-idb/-/issues" target="_blank">Issue Tracker</a></h3>
+                <h6><a href="https://speakerdeck.com/ggrrcc/cs-331e-group-14-presentation" target="_blank">Final Presentation</a></h6>
+                <br>
+                <h3>Our Postman Documentation</h3>
+                <h6><a href="https://documenter.getpostman.com/view/21619308/2s93RWMqPB" target="_blank">Postman</a></h6>
+
+            </div>
+            <br>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/git" title="git icons">Git icons created by pictogramer - Flaticon</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/document" title="document icons">Document icons created by heisenberg_jr - Flaticon</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Freepik - Flaticon</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/python" title="python icons">Python icons created by Freepik - Flaticon</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/gitlab" title="gitlab icons">Gitlab icons created by Freepik - Flaticon</a>
+        <br>
+        <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
+
+    <script>
+        $(document).ready(function() {
+            // GitLab API endpoint and project ID
+            var apiUrl = "https://gitlab.com/api/v4/projects/42962784";
+            // gitlab personal access token
+            var token = "glpat-M8i2zkypG21vwK62kCPw";
+            // gitlab emails
+            let jacobEmail = "jacob13foster@outlook.com";
+            let willEmail = "wdarcherjr@gmail.com";
+            let yvetteEmail = "yvettearellano422@gmail.com";
+            let gregoryEmail = "gregory.c2009@gmail.com";
+
+            let wCountC = 0;
+            let jCountC = 0;
+            let yCountC = 0;
+            let gCountC = 0;
+            let totalCommits = 0;
+
+            for (let x = 1; x < 3; x++) {
+                $.ajax({
+                url: apiUrl + "/repository/commits?per_page=100&page=" + x + "&private_token=" + token,
+                success: function(data) {
+                    console.log(apiUrl + "/repository/commits?per_page=100&page=" + x + "&private_token=" + token)
+                    data.forEach(commit => {
+                        totalCommits ++;
+                        if (commit.author_email == willEmail) {
+                            wCountC ++;
+                            console.log('hit W' + wCountC);
+                        } else if (commit.author_email == jacobEmail) {
+                            jCountC ++;
+                            console.log('hit J' + jCountC);
+                        } else if (commit.author_email == yvetteEmail) {
+                            yCountC ++;
+                        } else if (commit.author_email == gregoryEmail) {
+                            gCountC ++;
+                        }
+                    });
+                    $("#commit-count-Will").text(wCountC);
+                    $("#commit-count-Jacob").text(jCountC);
+                    $("#commit-count-Yvette").text(yCountC);
+                    $("#commit-count-Gregory").text(gCountC);
+                    $("#totalCommits").text(totalCommits)
+                }
+            });   
+            }
+            
+            // get issue count
+            $.ajax({
+                url: apiUrl + "/issues?per_page=100&private_token=" + token,
+                success: function(data) {
+                    let wCount = 0;
+                    let jCount = 0;
+                    let yCount = 0;
+                    let gCount = 0;
+                    let totalIssues = 0;
+                    data.forEach(issue => {
+                        totalIssues ++;
+                        if (issue.assignee != null) {
+                            if (issue.assignee.username == "jacobfoster") {
+                                jCount ++;
+                            } else if (issue.assignee.username == "yvettea") {
+                                yCount ++;
+                            } else if (issue.assignee.username == "wdarcher") {
+                                wCount ++;
+                            } else if (issue.assignee.username == "gregory.c2009") {
+                                gCount ++;
+                            }
+                        }
+                    });
+                    $("#issue-count-Will").text(wCount);
+                    $("#issue-count-Yvette").text(yCount);
+                    $("#issue-count-Gregory").text(gCount);
+                    $("#issue-count-Jacob").text(jCount);  
+                    $("#totalIssues").text(totalIssues)
+                }
+            });
+        })
+        function toggleImage() {
+        var image = document.getElementById("myImage");
+        var image2 = document.getElementById("myImage2");
+        var button = document.getElementById("unittestButton");
+            if (image.style.display === "none") {
+                image.style.display = "block";
+                button.innerHTML = "Hide Unit Test Results";
+
+            } else {
+                image.style.display = "none";
+                button.innerHTML = "Show Unit Test Results";
+            }
+            if (image2.style.display === "none") {
+                image.style.display = "block";
+                button.innerHTML = "Hide Unit Test Results";
+
+            } else {
+                image2.style.display = "none";
+                button.innerHTML = "Show Unit Test Results";
+            }
+        }
+    </script>
+    </body>
+</html>

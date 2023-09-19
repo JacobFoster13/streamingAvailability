@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Actors</title>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/actor.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="{{url_for('index')}}">StreamingAvailability</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="{{url_for('index')}}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><u>Actors</u></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('movies')}}">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('tvshows')}}">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('about')}}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('models')}}">Models</a>
+                </li>
+                </ul>
+              </div>
+          </nav>
+        <div style="margin: 1%;">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/hbz-steve-carell-index-1498242078.jpg" 
+                            alt=""
+                            class="card-img-top mx-auto"
+                            style="max-height: 350px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Steve Carrell</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Bio</th>
+                                        <td>Steve Carell, one of America's most versatile comics, was born Steven John Carell on August 16, 1962, in Concord, Massachusetts. He is the son of Harriet Theresa (Koch), a psychiatric nurse, and Edwin A. Carell, an electrical engineer. His mother was of Polish descent and his father of Italian and German ancestry (Steve's grandfather had changed the surname from "Caroselli" to "Carell").</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Movies</th>
+                                        <td>Despicable Me, The 40-Year-Old Virgin, Crazy, Stupid, Love</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">TV Shows</th>
+                                        <td><a href="{{url_for('tvshows')}}">The Office</a>, The Patient, Space Force</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Birthday</th>
+                                        <td>8/16/1962</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Deceased</th>
+                                        <td>False</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://variety.com/wp-content/uploads/2021/05/Kiefer-Sutherland-e1620683370377.jpg" 
+                                    alt=""
+                                    class="card-img-top mx-auto"
+                                    style="max-height: 350px; max-width: auto;">
+                        <div class="card-body">
+                            <h3 class="card-title">Kiefer Sutherland</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Bio</th>
+                                        <td>Kiefer Sutherland was born in London, England, UK, to Canadian actors Shirley Douglas and Donald Sutherland, who moved to California shortly after his birth. His maternal grandfather, Tommy Douglas, was a Scottish-born Canadian politician who was a Premier of Saskatchewan for over 17 years and led the national NDP party for almost 10. Kiefer got his first film role in the comedy drama Max Dugan Returns (1983). Sutherland's first major role was in the Canadian drama The Bay Boy (1984), which earned Sutherland and director Daniel Petrie, Genie award nominations for best actor and best director, respectively. Following his success in The Bay Boy, Sutherland eventually moved to Los Angeles and landed television appearances in "The Mission", an episode of Amazing Stories (1985) and in the telefilm Trapped in Silence (1986) with Marsha Mason.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Movies</th>
+                                        <td>Phone Booth, Mirrors, Zoolander 2</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">TV Shows</th>
+                                        <td>24, Designated Survivor, The First Lady</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Birthday</th>
+                                        <td>12/21/1966</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Deceased</th>
+                                        <td>No</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://www.cheatsheet.com/wp-content/uploads/2022/04/Reese-Witherspoon.jpg" 
+                            alt="" 
+                            class="card-img-top mx-auto">
+                        <div class="card-body">
+                            <h3 class="card-title">Reese Witherspoon</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Bio</th>
+                                        <td>Laura Jeanne Reese Witherspoon was born on March 22, 1976 in New Orleans, Louisiana to Betty Witherspoon, a registered nurse & John Draper Witherspoon, a military surgeon. Reese spent the first 4 years of her life in Wiesbaden, Hesse, Germany, where her father served as a lieutenant colonel in the US Army reserves. Shortly after, the family moved back to the USA & settled in Nashville, Tennessee. Reese was introduced to the entertainment industry at a very early age. At age 7, she began modeling. This led to appearances on several local television commercials. At age 11, she placed first in a Ten-State Talent Fair. In 1990, she landed her first major acting role in Robert Mulligan's The Man in the Moon (1991). Her role as a 14-year old tomboy earned her rave reviews. Roles in bigger films such as Jack the Bear (1993) and A Far Off Place (1993) followed shortly after.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Movies</th>
+                                        <td>Wild, Legally Blond, Cruel Intentions</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">TV Shows</th>
+                                        <td>The Morning Show, Big Little Lies, The Mindy Project</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Birthday</th>
+                                        <td>3/22/1976</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Deceased</th>
+                                        <td>No
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        <br>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>

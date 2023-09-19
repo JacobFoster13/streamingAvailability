@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <title>TV Shows</title>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/searchbar.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    </head>
+    <body style="overflow-x: hidden;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="{{url_for('index')}}">StreamingAvailability</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('actors')}}">Actors</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('movies')}}">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('tvshows')}}"><u>TV Shows</u></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('about')}}">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{url_for('models')}}">Models</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div style="margin: 1%;">
+        <h1>TV Shows</h1>
+        
+        <form action="/tvshows" method="GET" id="search-form">
+            <div class="row">
+                <div class="col-8">
+                    <div class="input-group">
+                        <input name="search" type="text" class="form-control" placeholder="Search">
+                        <button class="btn btn-dark" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="input-group">
+                        <select class="form-select" name="movtv" id="movtv-select">
+                            <option value="tv">TV Show</option>
+                            <option value="movie">Movie</option>
+                            <option value="actor">Actor</option>
+                        </select>
+                        <div class="dropdown">
+                            <button class="btn btn-white border dropdown-toggle" data-toggle="dropdown" type="button">Services: default (all)</button>
+                            <div class="dropdown-content" id="dropdown-content">
+                                <div class="checkb">
+                                    <label for="apple">Apple:</label><input name="service" type="checkbox" id="apple" value="apple"/>
+                                </div>
+                                <div class="checkb">
+                                    <label for="amazon">Curiosity:</label><input name="service" type="checkbox" id="curiosity" value="curiosity"/>
+                                </div>
+                                <div class="checkb">
+                                    <label for="disney">Disney:</label><input name="service" type="checkbox" id="disney" value="disney"/>
+                                </div>
+                                <div class="checkb">
+                                    <label for="hbo">HBO Max:</label><input name="service" type="checkbox" id="hbo" value="hbo"/>
+                                </div>
+                                <div class="checkb">
+                                    <label for="hulu">Hulu:</label><input name="service" type="checkbox" id="hulu" value="hulu"/>
+                                </div>
+                                <div class="checkb">
+                                    <label for="netflix">Netflix:</label><input name="service" type="checkbox" id="netflix" value="netflix"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-6">
+                    <input name="search" type="text" class="form-control" placeholder="Search">
+                </div> -->
+                <!-- <div class="col-2">
+                    <select class="form-select w-100" name="movtv" id="movtv-select">
+                        <option value="tv">TV Show</option>
+                        <option value="movie">Movie</option>
+                        <option value="actor">Actor</option>
+                    </select>
+                </div> -->
+                <!-- <div class="col-2 text-center">
+                    <div class="dropdown">
+                        <button class="btn btn-white w-100 dropdown-toggle border" data-toggle="dropdown">Services: default (all)</button>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <div class="checkb">
+                                <label for="curiosity">Curiosity:</label><input name="service" type="checkbox" id="curiosity" value="curiosity"/>
+                            </div>
+                            <div class="checkb">
+                                <label for="disney">Disney:</label><input name="service" type="checkbox" id="disney" value="disney"/>
+                            </div>
+                            <div class="checkb">
+                                <label for="hbo">HBO Max:</label><input name="service" type="checkbox" id="hbo" value="hbo"/>
+                            </div>
+                            <div class="checkb">
+                                <label for="hulu">Hulu:</label><input name="service" type="checkbox" id="hulu" value="hulu"/>
+                            </div>
+                            <div class="checkb">
+                                <label for="apple">Apple:</label><input name="service" type="checkbox" id="apple" value="apple"/>
+                            </div>
+                            <div class="checkb">
+                                <label for="netflix">Netflix:</label><input name="service" type="checkbox" id="netflix" value="netflix"/>
+                            </div>                            
+                        </div>
+                    </div>
+                    
+                </div> -->
+                <!-- <div class="col-2 text-center">
+                    <button class="btn btn-outline-secondary w-100" type="submit">
+                        Search 
+                    </button>
+                </div> -->
+            </div>
+        </form>
+        </div>
+        
+        <div class="row row-cols-1 row-cols-sm-3 g-4">
+            {% if shows == [] %}
+                <p>Loading...</p>
+            {% else %}
+                {% for i in shows %}
+                    <div class="col">
+                        <div class="card h-100 border-secondary" style="margin-top: 2%; margin-left: 1%; margin-right: 1%;">
+                            <img src={{i.image}} 
+                                onerror="this.onerror=null; this.src='../static/img/default_img.jpg';"
+                                alt="Put Film Filler Image" 
+                                class="card-img-top mx-auto"
+                                style="max-width: 300px; margin-top: 10px;">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#{{i.id}}">
+                                    <h4>{{i.title}}</h4>
+                                </button>
+                        
+                                <!-- Modal -->
+                                <div class="modal fade" id="{{i.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="exampleModalLabel">{{i.title}}</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>{{i.description}}</p>
+                                            <hr>
+                                            <p><strong>Minimum Viewing Age: </strong> {{i.ageRec}}</p>
+                                            <p><strong>Available on: </strong> <a href={{i.link}} target="_blank">{{i.service.title()}}</a></p>
+                                            <p>
+                                                {% if i.acts == [] %}
+                                                    <span>Cast Not Available</span>
+                                                {% else %}
+                                                    <p><strong>Stars: </strong>
+                                                        {% for j in i.acts %}
+                                                            <span><a href="{{url_for('actor_search', actor=j.name)}}">{{j.name}}</a>, </span>
+                                                        {% endfor %}
+                                                    </p>
+                                                {% endif %}
+                                            </p>
+                                            <p><strong>Ratings: </strong> {{i.score}}</p>
+                                            <p><strong>Genre: </strong> {{i.genre}}</p>
+                                            <p><strong>Seasons: </strong> {{i.seasons}}</p>
+                                            <p><strong>Episodes: </strong> {{i.episodes}}</p>
+                                            <p><strong>Language: </strong> {{i.language.title()}}glish</p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <p>{{i.shortDescription.strip()}}...</p>
+                            </div>
+                        </div>
+                    </div>
+            {% endfor %}
+        {% endif %}
+        </div>
+        <br>
+        {% if shows.has_prev or shows.has_next %}
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                    {% if shows.has_prev %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ url_for('tvshows', page=shows.prev_num) }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% for num in shows.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=2) %}
+                        {% if num %}
+                            {% if shows.page == num %}
+                                <li class="page-item active"><a class="page-link" href="#">{{ num }}</a></li>
+                            {% else %}
+                                <li class="page-item"><a class="page-link" href="{{ url_for('tvshows', page=num) }}">{{ num }}</a></li>
+                            {% endif %}
+                        {% else %}
+                            <li class="page-item disabled"><span class="page-link">&hellip;</span></li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if shows.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ url_for('tvshows', page=shows.next_num) }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        {% endif %}
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var movtvSelect = $('#movtv-select');
+                var searchForm = $('#search-form');
+        
+                movtvSelect.on('change', function() {
+                    var movtvValue = movtvSelect.val();
+        
+                    if (movtvValue === 'tv') {
+                        searchForm.attr('action', '/tvshows');
+                    } else if (movtvValue === 'movie') {
+                        searchForm.attr('action', '/movies');
+                    } else if (movtvValue === 'actor') {
+                        searchForm.attr('action', '/actors');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

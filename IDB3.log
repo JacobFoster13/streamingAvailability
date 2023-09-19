@@ -1,0 +1,1023 @@
+[33mcommit 0c8cf781bdc0ef8dc128cfa416f1808027bf9aa5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Apr 6 15:42:36 2023 -0500
+
+    added speaker deck link
+
+[33mcommit d0522e78cc563918d9df403af15bb74bda09c515[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Apr 6 13:20:16 2023 -0500
+
+    fix bug on search bar where clicking on services drop down submits form
+
+[33mcommit bbcaaa4707b6f6a1d7a5994ebf39dcdce8c96650[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Apr 6 02:24:07 2023 -0500
+
+    code cleanup and commenting
+
+[33mcommit 50fef90a69a68187747a4bd82366f5debbe881b6[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Apr 5 18:51:39 2023 -0500
+
+    changed layout of search bar an fixed bug
+
+[33mcommit 267cdeb5b2e04eae214e5c81459f8d76200d80cb[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Apr 5 17:54:36 2023 -0500
+
+    added documentation for .py files
+
+[33mcommit e3e7c984bdb61b1188c4f718385bb33657f94e9c[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Apr 5 16:52:34 2023 -0500
+
+    changed nav bar on models page to underline in white not black
+
+[33mcommit d3a334cb9744f23ee31c1ee8a5059e254b0642a1[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Apr 5 16:26:36 2023 -0500
+
+    change search button on search bar to grey with white
+
+[33mcommit 7356b9b5c619267adf3271f1e446198290d127ca[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Apr 5 16:10:39 2023 -0500
+
+    add paddign above images in actors, tvshows, and movies pages
+
+[33mcommit 2c9cb1672fc5b0c26a8caaf1e4277d1634d9e0a8[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Apr 5 14:00:58 2023 -0500
+
+    edit base2 get rid of drop down for modls on nav bar, add base3 to underlne models nav link when on models page
+
+[33mcommit 028c64275a2dd35d9f395e5d78a437f516a5cd3c[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Apr 5 02:48:39 2023 -0500
+
+    fix test bug;
+
+[33mcommit b7cc6bb889054b2bd07387b67351e74c1e599fa8[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Apr 5 02:42:04 2023 -0500
+
+    fixed gitlab api for issues and commits
+
+[33mcommit c292f86b981cc21776b03d47fd8cea6a33a195d8[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Apr 5 01:54:37 2023 -0500
+
+    added new unit tests, unit test images, and fixed actors API bug
+
+[33mcommit 131b758bf8cf1f60da5804d11e437ea31aef2a50[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Apr 5 00:52:23 2023 -0500
+
+    fixed search bar formatting and model selection bug
+
+[33mcommit 2735a1fa00de87c64c359bcc2230dd2c87aa669c[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:05:33 2023 -0500
+
+    changed actors reference
+
+[33mcommit 2568e95389a121db4946ed5c79ed9a4291043c6e[m
+Merge: 40a3f8e c5e1307
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:03:52 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 40a3f8ed7febb81d3ec7414c025f5c70d01422fa[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:03:41 2023 -0500
+
+    change file name and added comment
+
+[33mcommit c5e1307189ae5920f37bf30b1a5e01c8d548f32a[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 23:34:36 2023 +0000
+
+    Update app.yaml
+
+[33mcommit 732e30bf9e862e7aa8b1fba5d1dab5943c5f397d[m
+Merge: 25f4263 49abc80
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 17:26:44 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 25f4263810023ad4cdfec9a1023180fd1b803a64[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 17:26:31 2023 -0500
+
+    reworked the create_db file and took off debugger in main
+
+[33mcommit 49abc80ed6d4906122a5207a8da4e3a1ad1ca141[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 20:56:43 2023 +0000
+
+    Update app.yaml
+
+[33mcommit c9f95b090a3f33594c40503ec2d1e373ce2a41c7[m
+Merge: 8bcfef2 40d55a5
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 15:51:38 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 8bcfef2b686d58dc006868d9b0983e326931750a[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 15:50:46 2023 -0500
+
+    possible fix for GCP DB access issue
+
+[33mcommit 40d55a5bda6b3dc9a4fcddf1485ee728e7e18502[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 20:10:00 2023 +0000
+
+    Update app.yaml
+
+[33mcommit e80a5db6c540fce46d919e66f6926058863c525e[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:29:44 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit 6a5494164b34adac5fbad9cd10d007fd3238cf85[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:20:31 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit e4d9803d6834595eb4513e27b74b20a3c27d5e06[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:13:29 2023 +0000
+
+    Update app.yaml
+
+[33mcommit 61dfb59b032eef05f8647967e2017e38fa264a13[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:12:52 2023 +0000
+
+    Update app.yaml
+
+[33mcommit f72f1726f2f7dde3503af6aaf3023467972d9308[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:10:56 2023 +0000
+
+    Update app.yaml
+
+[33mcommit 75dea20d815d9839ed96422123362411411d8c5e[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:06:17 2023 +0000
+
+    Update app.yaml
+
+[33mcommit fac96496b65a74a5002dc5733b170037991bdbd6[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 19:02:13 2023 +0000
+
+    Update app.yaml
+
+[33mcommit d592049f751a9aa460245bb2cc0d68c2ced8b9ea[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 16:51:45 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit 352cd1aa55a88a458681eab85dd5f38d7d666e83[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 15:26:49 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit 45006c3a882b4aad236bd5f3f3ac9209824946c5[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 15:12:42 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit b20ef78f3e67982e17b4e36f1347048ea57fa49f[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 02:47:25 2023 -0500
+
+    fixed small bug on models
+
+[33mcommit 42e2108bf1e040fefdc1b640813136cb450b408c[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Tue Apr 4 02:38:46 2023 -0500
+
+    interlinked the three pages, fixed actor layout
+
+[33mcommit 087ee25db618d8ed06671fc4634980aa035792b2[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Mon Apr 3 14:43:32 2023 -0500
+
+    change to create_db to help with GCP issue hopefully
+
+[33mcommit d16f82d390e5a133cb6d404766df925b353f2123[m
+Merge: 4ce25af 50b93ba
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Sun Apr 2 18:11:18 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 4ce25af1c58fe2bde8b917bd84de9f606ed1c60e[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Sun Apr 2 18:10:59 2023 -0500
+
+    added new api endpoint for services
+
+[33mcommit 50b93baf110e15a4ea01ff20e1536b7ba8e08c4b[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Sun Apr 2 09:58:16 2023 -0500
+
+    fixed sorting bug with numbers
+
+[33mcommit d14816c781582dfcf786252b177144a4b98a9b1b[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Fri Mar 31 17:38:14 2023 -0500
+
+    quickly added model instance page
+
+[33mcommit e94a075478d3b02e5ac2785deb7dc49d1a54636c[m[33m ([m[1;31morigin/yvette[m[33m)[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Fri Mar 31 15:56:57 2023 -0500
+
+    implemented sorting func
+
+[33mcommit 5c95357c5dfbfc6a403fe390a469ac2dcd78b330[m
+Merge: 575c298 67da8f4
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 30 17:39:02 2023 -0500
+
+    Merge branch 'modal'
+
+[33mcommit 67da8f4aeb8fc1d839ffa071ecb0fdabd7735fea[m[33m ([m[1;31morigin/modal[m[33m, [m[1;32mmodal[m[33m)[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 30 17:37:40 2023 -0500
+
+    added modals to movies and tv shows
+
+[33mcommit 575c2981a8297db66a50f95d58691b84161878a0[m
+Merge: 768cb2a 59cb1ca
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Mar 30 17:06:04 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb into yvette
+
+[33mcommit 768cb2a68b09d1bcee8174a9ae5cee462b02dcdc[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Mar 30 17:04:33 2023 -0500
+
+    differentiated model pages so each model has its own page with template
+
+[33mcommit 59cb1ca8e902ee651e9c671cb9f383e2c3a0712e[m[33m ([m[1;31morigin/search[m[33m)[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 30 15:27:53 2023 -0500
+
+    change search bar: can search for multiple streaming services at once. Cleaned up query code in routes
+
+[33mcommit 38e840d120c81ab260482d2095484c2893b9cd4b[m
+Merge: 1fa2442 93f21b9
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 30 02:06:27 2023 -0500
+
+    Merge branch 'make-api'
+
+[33mcommit 93f21b95fbbd1eda3c4a531abb4425c707dc3e23[m[33m ([m[1;31morigin/make-api[m[33m, [m[1;32mmake-api[m[33m)[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 30 02:03:58 2023 -0500
+
+    added APIs for services, actors, shows, and movies
+
+[33mcommit 1fa2442ebe893413665b697861d5e5644a12556a[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Mar 29 21:52:52 2023 -0500
+
+    add pagination to routes and templates for actors, movies, tvshows
+
+[33mcommit 1510ac665fdf0ee4556933f885496a8d1f412ba5[m
+Merge: c070703 2d0d92f
+Author: Will Archer <wdarcherjr@gmail.com>
+Date:   Wed Mar 29 22:27:48 2023 +0000
+
+    Merge branch 'search' into 'main'
+    
+    search bar on all pages. Includes search for actors
+    
+    See merge request jacobfoster/cs331e-idb!6
+
+[33mcommit 2d0d92f7795fc6e6bf30d364e7fa31ef32685bc8[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Mar 29 17:25:09 2023 -0500
+
+    search bar on all pages. Includes search for actors
+
+[33mcommit c070703637060686fdaef3a536dcf832eaee0b15[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 29 21:04:40 2023 +0000
+
+    Update app.yaml
+
+[33mcommit a73fa4cbeb8964ca2cd4954ae3a3f9e15790f72d[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 29 21:03:58 2023 +0000
+
+    Update app.yaml
+
+[33mcommit d386c59344a12fc6274bc63f80169a0279058f29[m
+Merge: c4d3120 59b3dc1
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Mar 29 15:55:01 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb into search
+
+[33mcommit c4d3120183770ad33abd86b3c56e2fc0afb92de6[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Mar 29 15:50:03 2023 -0500
+
+    add search bar to base templates and tvshows template added functionality to search for movies and tv shows by name and streaming service
+
+[33mcommit 59b3dc12356846cea6482931de18770d28261842[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 29 15:47:05 2023 -0500
+
+    fixing hosting and db issue
+
+[33mcommit f9b9120682ed9b49a24f14045afdf0af75cb8a31[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Mar 29 13:48:24 2023 -0500
+
+    Add searchBar.html to search branch
+
+[33mcommit f5e63a98236206f9ecfcea33ed947babdf74ec58[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Fri Mar 24 02:39:17 2023 +0000
+
+    Update app.yaml
+
+[33mcommit 66a4e91438671cda59912a0bfd834b364771d572[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Fri Mar 24 02:36:55 2023 +0000
+
+    Update app.yaml
+
+[33mcommit 9b9922824b7d5cc1e25d1153de290f562a2951cc[m
+Merge: 0d5d2d9 5980506
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 21:26:36 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 0d5d2d9f3cba589ec4334b0de9032ebcc79a10d7[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 21:26:23 2023 -0500
+
+    last effort to automate db creation
+
+[33mcommit 59805066bbb3cd2ee03fdcb6d6de3049889e4732[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Fri Mar 24 02:14:20 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit c78407d0c3b9ddef34cbea9b6d6a07b26843eeac[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Fri Mar 24 02:06:39 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit 750939d1313f322a2d5376aa12388cbfa6f7f031[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Fri Mar 24 02:04:21 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit 0a1d3df7c0eb4ed111df0cbc7d1ff9d70cbb3d9b[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 20:55:08 2023 -0500
+
+    fix about us page
+
+[33mcommit 5b4c25f7ed07055820fac0cc4c1af6b158bcc7ae[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 20:50:54 2023 -0500
+
+    add base2
+
+[33mcommit d5761c3316d7922574bdb53ed4558959d73e4165[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 20:41:26 2023 -0500
+
+    clean up
+
+[33mcommit 9e0d87fc97f75d16b63822b6031768d381480006[m
+Merge: 804412c 20b9eeb
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Mar 23 20:37:38 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+    Adding movies_new.html
+
+[33mcommit 804412cbdbc992c8ff660543cd2355255b0d9b73[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Mar 23 20:36:07 2023 -0500
+
+    Movies Addition
+
+[33mcommit 20b9eeb04fabcaeebb3027c34492eb6d43f7768f[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 20:12:42 2023 -0500
+
+    add blank profile pic for actorsFl.html
+
+[33mcommit 62a844af3a68e090e969242321bc82f72487dbfb[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 19:47:56 2023 -0500
+
+    add links for tv shows and movies pages to actorsFl
+
+[33mcommit 7026941321a18c4fca9464b8c65040685492877a[m
+Merge: 9ef5546 761125c
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 18:43:56 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 9ef55464649adbf11e822bbcc59997a30b5fc8bf[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 18:43:44 2023 -0500
+
+    last touches to tvshows page
+
+[33mcommit 761125c9a8182e6ebaacc1ad8358203f0fe73102[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 18:39:36 2023 -0500
+
+    add unittest proof on about.html
+
+[33mcommit 5f5c39d997776e7368a3b5159b56ee74712da0c9[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 18:14:46 2023 -0500
+
+    add cstest picture for test proof
+
+[33mcommit 1b0e7d5b261620397ec4826f3e14bba47fa8a5ac[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 17:56:01 2023 -0500
+
+    fix actor.movies, actor.tvshows on actorsFl.html; slight changes to Bio section
+
+[33mcommit 60242ab7bef46c9f80577af17786753050ba7da0[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 17:12:18 2023 -0500
+
+    display cast for tv shows
+
+[33mcommit 4b3e19c27bc8c5314263096146f4abb80eddac59[m
+Merge: 7e467af da067bd
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 16:57:56 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 7e467af6ffece422597124685c77571cc7ac45f4[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 16:57:48 2023 -0500
+
+    small adjustments to create_db, template for TV shows working
+
+[33mcommit da067bd96e3348d994dc0f3556006bd4952805b9[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Mar 23 16:34:14 2023 -0500
+
+    models page
+
+[33mcommit fcbdd3a36df30af20ddc70f635229b11cc5b0ae8[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 15:57:49 2023 -0500
+
+    re-fix actorsFl template
+
+[33mcommit e6e9e963d129365dbefa89f5038ad170fe31a210[m
+Merge: 18a566c ecdd243
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 15:46:30 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit ecdd2437c39575dab65bf5636561513b7bf6f476[m
+Merge: 8b6a3a2 0af6659
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Mar 23 15:47:59 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb into yvette
+
+[33mcommit 8b6a3a2df54d2a0d5bdcbe06d0e1c767d34f42a1[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Mar 23 15:47:09 2023 -0500
+
+    edited models page formatting
+
+[33mcommit 18a566caf0344f23d629137cf55d3f805fe7fd3d[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 15:46:06 2023 -0500
+
+    attempt to fix broken pipeline on gitlab
+
+[33mcommit 0af665967cf2e8b070e353252bf181586a26239f[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 15:39:41 2023 -0500
+
+    commented out functions on create_db, models, and made changes to main
+
+[33mcommit 277c7e066cfc6bbddb1974e1f2378c93e3d28fea[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Mar 23 14:47:51 2023 -0500
+
+    modelspage
+
+[33mcommit 029d3bb07d87a39afbf3cf5e93b01b2f8f63223d[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Mar 23 14:42:00 2023 -0500
+
+    edited models.html page
+
+[33mcommit 8e2c5703432d9d8c9e9ab988026ca3a232ef4d46[m
+Merge: 41dc611 5815577
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 13:44:03 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 41dc611aef9a4eb4f85035c080f4e787939a3f38[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 13:43:45 2023 -0500
+
+    revised unittests
+
+[33mcommit 581557752960f9fd23f1bd3537a4762f6240bb16[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 18:39:51 2023 +0000
+
+    Update .gitlab-ci.yml
+
+[33mcommit 5007e7242bab5108d32eda115e2616856a425a30[m
+Merge: d236cf5 3394175
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 13:28:37 2023 -0500
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit d236cf5dc6ce95355a46298f6824c245bdaf711e[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 13:28:11 2023 -0500
+
+    added DB query in main.py and made some adjustments in create_db and templates
+
+[33mcommit 339417585805ce8859f6bff6f36465efb20cec5d[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 06:54:59 2023 +0000
+
+    Update requirements.txt
+
+[33mcommit 0c52a0dc156298617a1142dd4b0f27fd483149e7[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 06:27:10 2023 +0000
+
+    Update .gitlab-ci.yml file
+
+[33mcommit 4b749c6b26be2ff4766307642db5fe8e6c4ea03b[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 06:25:04 2023 +0000
+
+    Update app.yaml
+
+[33mcommit 84923b61ac92fbc4ec0157144521e3fbbd63d5c1[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Mar 23 00:45:47 2023 -0500
+
+    added gitlab api information'
+
+[33mcommit 9a99e875601ac99711bba8fb24ef77800b2c1dce[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Mar 23 00:25:33 2023 -0500
+
+    add more instances of actor for test, fix actorFl.html to create 2 cards per row, aesthetic changes to base.html
+
+[33mcommit f2135ea9a1273d07d2ffa12b9aa54d8b14e3d96e[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Mar 22 23:11:20 2023 -0500
+
+    change actors.py list name, add test for actors template in main.py, aesthetic changes to actors.html, create true template in actorsFl.html, add base.html for other pages to extend
+
+[33mcommit 5ba403bdb1507e9ed71b230489e6a5d6caaac18f[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 22 20:35:47 2023 -0500
+
+    added image to models and create_db
+
+[33mcommit 469d2a45b25d7a6b8ed73d6d91481fdc15220930[m[33m ([m[1;32mflask-shows[m[33m)[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 22 20:18:50 2023 -0500
+
+    added streaming services and links to models and create_db
+
+[33mcommit 00dafc26827cb1cce48e40b8411a4407a065928e[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 22 18:57:03 2023 -0500
+
+    fixed multiple actors occurence issue and added more unit tests
+
+[33mcommit 44e6ce2d1f05244bad2e91a1ea3e5fdbd306d3df[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 22 17:24:52 2023 -0500
+
+    added bare minimum unit tests to test.py
+
+[33mcommit 04f2f310b17b77d27b067f7595f48b4a362edfc4[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 22 17:12:13 2023 -0500
+
+    code clean up and commenting
+
+[33mcommit b1dea335bddd35c1f06ec66f7c938550e8bd8d33[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 22 17:04:04 2023 -0500
+
+    removed genre and completed linking table models and data input
+
+[33mcommit 3766faead34f9919e2bf47ddad60053a2b37d88f[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Mar 22 10:02:25 2023 -0500
+
+    preliminary models, create_db, and test files
+
+[33mcommit bb3bce93f2fcb1cd70d175e59e204eb1139e252d[m[33m ([m[1;31morigin/25-add-method-to-run-unit-tests-to-about-page-on-website[m[33m)[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 16:37:01 2023 -0600
+
+    added will's responsibility
+
+[33mcommit e9440e7db51f9779ebc0c0492b141b4ec0243b9b[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Feb 16 16:11:28 2023 -0600
+
+    Test
+
+[33mcommit 332632d788f99ffd57f9ad5e3ae3084d07eca389[m
+Merge: 58e1fbe 3eb389e
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Feb 16 16:07:25 2023 -0600
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+    Trying to fix my picture
+
+[33mcommit 58e1fbe9a6e516b261df07e9e368a0b957231942[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Feb 16 16:07:02 2023 -0600
+
+    Trying to fix picture
+
+[33mcommit 3eb389eb018c4a2b9f1c6354ef9c3ae5c6a29783[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Feb 16 13:19:44 2023 -0600
+
+    added responsibilities in about us page
+
+[33mcommit 68d3b77e099171d7f22adc35d4fef398a75a001a[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Thu Feb 16 13:15:33 2023 -0600
+
+    finished models page
+
+[33mcommit 6a9728df729f1cefccf44c6bbd82e3f17e38b6e5[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 12:44:56 2023 -0600
+
+    some formatting on movies page
+
+[33mcommit 2b372a0339100b60a14fdc606400976119ebb571[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Feb 16 11:41:35 2023 -0600
+
+    Small change to my about info
+
+[33mcommit 5686c54b7f699bfce50e3f441ed760dbd00d1ee0[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Feb 16 11:30:32 2023 -0600
+
+    Added Greg about info
+
+[33mcommit 389e49f6a70fb8a81806fd610248430c6c8fbf4e[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Thu Feb 16 11:25:27 2023 -0600
+
+    Adding movies.html
+
+[33mcommit bd14070f39933ea614f5653611e8d1ea50c90369[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 09:45:30 2023 -0600
+
+    uniform navbar text color"
+
+[33mcommit 569717736e11c8777d017daff48ea6853a9d8238[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 01:17:38 2023 -0600
+
+    i put the wrong link on one :(
+
+[33mcommit 514805b8a0389750a49fbfafd1aa3b18e79f7645[m
+Merge: 73aa7ce 121927b
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 01:13:00 2023 -0600
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit 73aa7cef66ea9aecd3d27100a5afdd74fd3bcfa5[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 01:11:34 2023 -0600
+
+    more links on the models page
+
+[33mcommit 121927b9472e8b7cb5f5e4d3aa0faada59842828[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 06:59:19 2023 +0000
+
+    Delete actors.cpython-310.pyc
+
+[33mcommit 5b0efa9215b67bc4e99db9c4d2f7f24b04e05b7e[m
+Merge: a3bf73d 54b44b6
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 00:56:57 2023 -0600
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb
+
+[33mcommit a3bf73d0f029dd22f8ab0f5ae04105c903cb0377[m[33m ([m[1;31morigin/links[m[33m, [m[1;32mlinks[m[33m)[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Thu Feb 16 00:54:24 2023 -0600
+
+    added links to Steve Carrell and website name
+
+[33mcommit 54b44b662a2c8838d1a7e1b9635a0f19b45115d8[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Thu Feb 16 00:14:19 2023 -0600
+
+    fix gitlab api call, change results per page to 100
+
+[33mcommit b176839d5347bb9cc49cd59f7b4ea929c0767fa2[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Feb 15 23:15:36 2023 -0600
+
+    Added Jacob About section
+
+[33mcommit 79c8c44a7e832100625ecb8b6ee7f3d3d21616be[m
+Merge: 1abd476 8e9bcf0
+Author: Yvette Arellano <yvettea@utexas.edu>
+Date:   Thu Feb 16 02:29:04 2023 +0000
+
+    Merge branch 'yvette' into 'main'
+    
+    Yvette
+    
+    See merge request jacobfoster/cs331e-idb!4
+
+[33mcommit 8e9bcf0ca0c0d8d5d208e515af8c5c4f2e72afdd[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 20:29:40 2023 -0600
+
+    add bio photo
+
+[33mcommit 278039ca10958b92a95c07162a39c6948f99bafb[m
+Merge: ed1965a 1abd476
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 20:17:50 2023 -0600
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb into yvette
+
+[33mcommit ed1965ab352e926f04ff9f1345c4cccee2b274c2[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 20:16:46 2023 -0600
+
+    add photo in about us page
+
+[33mcommit 1abd476196ed241bcf8068ea1300149639457a10[m
+Merge: 42a9295 3d59913
+Author: Yvette Arellano <yvettea@utexas.edu>
+Date:   Thu Feb 16 02:09:16 2023 +0000
+
+    Merge branch 'yvette' into 'main'
+    
+    Yvette
+    
+    See merge request jacobfoster/cs331e-idb!3
+
+[33mcommit 3d59913b10e43180c1b4dee0fbe251bbbaaccee5[m
+Merge: d61aebc 42a9295
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 20:05:04 2023 -0600
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb into yvette
+    
+    combining branhes
+
+[33mcommit 42a92951c3a4da79dca5e14265d7714da2d88906[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:59:32 2023 -0600
+
+    Renaming app.py
+
+[33mcommit d61aebc421648190379268b61b467bcc8c4a2e6a[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 19:57:15 2023 -0600
+
+    add bio in about page
+
+[33mcommit 3c2587d23395aeab29179328ef3a79fd6e1f03d9[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:50:41 2023 -0600
+
+    Re-adding .gitignore again
+
+[33mcommit 11fd49ab4591b236726ed22114231d62664141ab[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:50:07 2023 -0600
+
+    Removing pycache stuff from repo
+
+[33mcommit 84935f1593a747cce84953c1aba27162a8ed09ee[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:48:03 2023 -0600
+
+    Re-adding .gitignore
+
+[33mcommit dc8067b9d0e0f05b4c13762aef64bd00b2c30980[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:47:26 2023 -0600
+
+    Deleting venv from repo
+
+[33mcommit 046b709254241462939ef7a1a2f11ead5a82a900[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:43:40 2023 -0600
+
+    Fixing .gitignore
+
+[33mcommit 6d70f73793adafa730b8cabf203d8b0f6309ae1a[m
+Merge: bd4b322 342f997
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 19:41:39 2023 -0600
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb into yvette
+
+[33mcommit bd4b3223d25da87b8d82248dc4e92dfdd9dd8287[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 19:40:43 2023 -0600
+
+    models update
+
+[33mcommit 26235bf1fe2a78862803c6320d9e1d0f89f62902[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:40:16 2023 -0600
+
+    Adding gitignore
+
+[33mcommit 0665da263d2f9ef4ae570a2af92a2fe280c2c775[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 19:40:03 2023 -0600
+
+    condensed models page into one page
+
+[33mcommit 342f99706d4caa826370391463372e7e5a24e3f9[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:37:11 2023 -0600
+
+    Adding
+
+[33mcommit 960d354abc1e052e3fbd069bf244669d26364b0c[m
+Author: Gregory Colonescu <gregory.c2009@gmail.com>
+Date:   Wed Feb 15 19:22:55 2023 -0600
+
+    adding
+
+[33mcommit 044357e434d37e6864ad8ed49a67a7e0bbaa6356[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Wed Feb 15 19:20:47 2023 -0600
+
+    added model pages
+
+[33mcommit ba13bbccc03c214422b0de6f7526a886ceadd6c9[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Wed Feb 15 17:44:23 2023 -0600
+
+    fix gitlab API, add technologies used section, add icons to commits and issues
+
+[33mcommit 4ce0a8beeb6a3c93efeefee7a051dd4a1d46ada3[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Feb 15 14:41:12 2023 -0600
+
+    added navbar with functionality to TV Shows page
+
+[33mcommit 239789109daf19179b993f0a756dcba4604e60b8[m
+Merge: 8d76fbf e96a2bf
+Author: Will Archer <wdarcherjr@gmail.com>
+Date:   Wed Feb 15 04:39:33 2023 +0000
+
+    Merge branch 'dev' into 'main'
+    
+    connect to gitlab API get commits and issues on about.html
+    
+    See merge request jacobfoster/cs331e-idb!2
+
+[33mcommit e96a2bf914a34622dcb26355b154c6a1e0137d8c[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Tue Feb 14 22:37:25 2023 -0600
+
+    connect to gitlab API get commits and issues on about.html
+
+[33mcommit 8d76fbf8b787dbabfc74aeeec44d26946fbd2fbc[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Tue Feb 14 15:27:21 2023 -0600
+
+    add Will about.html add Will img
+
+[33mcommit 0fbbe2327f97507bcaddb0db047cb1fa9d90194e[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Tue Feb 14 14:37:50 2023 -0600
+
+    add nav bar to actors.html
+
+[33mcommit 6777a4ed6587f5ca5339bc89fd7327ad4de37975[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Tue Feb 14 14:13:00 2023 -0600
+
+    create actors.html following the tv show template
+
+[33mcommit 24af0d3a821d7b0c44f50aa11d565606db4ad21d[m[33m ([m[1;31morigin/shows[m[33m, [m[1;32mshows[m[33m)[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Mon Feb 13 20:17:23 2023 -0600
+
+    finished up tv shows page
+
+[33mcommit 7f2f9d95fb54ed2e0a439543a953ba1e864728fd[m
+Merge: de89faf 87541aa
+Author: Yvette Arellano <yvettea@utexas.edu>
+Date:   Mon Feb 13 02:32:03 2023 +0000
+
+    Merge branch 'yvette' into 'main'
+    
+    created splash page
+    
+    See merge request jacobfoster/cs331e-idb!1
+
+[33mcommit 87541aaf162931ff24ba70883e6b95ab50c71c7b[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Sun Feb 12 20:29:32 2023 -0600
+
+    general splash page update
+
+[33mcommit b26d4087cf0e01c7b323d8a0244038f0ab8d72f7[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Sun Feb 12 19:26:43 2023 -0600
+
+    added splash page and link to model pages
+
+[33mcommit 4224b545ef412185b5ca4899f2e3028c4e608825[m
+Merge: ffec393 de89faf
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Sat Feb 11 16:53:38 2023 -0600
+
+    Merge branch 'main' of https://gitlab.com/jacobfoster/cs331e-idb into yvette
+
+[33mcommit de89fafd163cbc2bf7ebf2dd37e49c1c5ed9dcaa[m
+Author: wdarcher <wdarcherjr@gmail.com>
+Date:   Sat Feb 11 15:58:08 2023 -0600
+
+    add basic template for actors.html (not finished), edit index.html, add actors.py contains data for actors, add app.py with index route to actors (just did this for testing), add css file for actors.html
+
+[33mcommit ffec393ad946bbcf3d514b7a3b05e1add942f20c[m
+Author: yvette422 <yvettearellano422@gmail.com>
+Date:   Sat Feb 11 12:13:59 2023 -0600
+
+    testing branch
+
+[33mcommit 968242a7a79b3436e642465ed35639da69e23cbb[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Feb 8 21:17:59 2023 -0600
+
+    Created directory structure
+
+[33mcommit 1072ef7859f6801afe853c99e2682ed52eb1c60d[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Wed Feb 8 21:09:02 2023 -0600
+
+    First Commit as a team :)
+
+[33mcommit 4b9d779b97498c74e9f0dcd840c81dc7517c5bc0[m
+Author: Jacob Foster <jacob13foster@outlook.com>
+Date:   Fri Jan 27 17:11:13 2023 +0000
+
+    Initial commit

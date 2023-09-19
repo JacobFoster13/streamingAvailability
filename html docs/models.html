@@ -1,0 +1,145 @@
+Help on module models:
+
+NAME
+    models - # import dependencies
+
+CLASSES
+    builtins.object
+        Actor
+        Movie
+        Show
+    
+    class Actor(db.Model)
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __tablename__ = 'actor'
+     |  
+     |  bio = Column(None, String(length=7000), table=None)
+     |  
+     |  birthPlace = Column(None, String(length=250), table=None)
+     |  
+     |  birthday = Column(None, Date(), table=None)
+     |  
+     |  gender = Column(None, String(length=10), table=None)
+     |  
+     |  id = Column(None, Integer(), table=None, primary_key=True, nullable=Fa...
+     |  
+     |  image = Column(None, String(length=200), table=None)
+     |  
+     |  movies = <Relationship at 0x15d5341f740; no key>
+     |  
+     |  name = Column(None, String(length=100), table=None, nullable=False)
+     |  
+     |  shortBio = Column(None, String(length=100), table=None)
+     |  
+     |  shows = <Relationship at 0x15d5341fd80; no key>
+    
+    class Movie(db.Model)
+     |  # ---------------------
+     |  # CLASSES
+     |  # ---------------------
+     |  
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __tablename__ = 'movie'
+     |  
+     |  ageRec = Column(None, Integer(), table=None)
+     |  
+     |  description = Column(None, String(length=1500), table=None)
+     |  
+     |  genre = Column(None, String(length=50), table=None)
+     |  
+     |  id = Column(None, Integer(), table=None, primary_key=True, nullable=Fa...
+     |  
+     |  image = Column(None, String(length=200), table=None)
+     |  
+     |  language = Column(None, String(length=3), table=None)
+     |  
+     |  length = Column(None, Integer(), table=None)
+     |  
+     |  link = Column(None, String(length=300), table=None)
+     |  
+     |  score = Column(None, String(length=10), table=None)
+     |  
+     |  service = Column(None, String(length=50), table=None)
+     |  
+     |  shortDescription = Column(None, String(length=100), table=None)
+     |  
+     |  title = Column(None, String(length=100), table=None, nullable=False)
+     |  
+     |  year = Column(None, Integer(), table=None)
+    
+    class Show(db.Model)
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __tablename__ = 'show'
+     |  
+     |  ageRec = Column(None, Integer(), table=None)
+     |  
+     |  description = Column(None, String(length=1500), table=None)
+     |  
+     |  episodeLength = Column(None, Integer(), table=None)
+     |  
+     |  episodes = Column(None, Integer(), table=None)
+     |  
+     |  genre = Column(None, String(length=50), table=None)
+     |  
+     |  id = Column(None, Integer(), table=None, primary_key=True, nullable=Fa...
+     |  
+     |  image = Column(None, String(length=200), table=None)
+     |  
+     |  language = Column(None, String(length=4), table=None)
+     |  
+     |  lastYear = Column(None, String(length=4), table=None)
+     |  
+     |  link = Column(None, String(length=300), table=None)
+     |  
+     |  score = Column(None, String(length=10), table=None)
+     |  
+     |  seasons = Column(None, Integer(), table=None)
+     |  
+     |  service = Column(None, String(length=50), table=None)
+     |  
+     |  shortDescription = Column(None, String(length=100), table=None)
+     |  
+     |  title = Column(None, String(length=80), table=None, nullable=False)
+     |  
+     |  year = Column(None, Integer(), table=None)
+
+DATA
+    app = <Flask 'models'>
+    db = <SQLAlchemy postgresql://postgres:***@localhost:5432/streamingdb>
+    moive_link = Table('movie_link', MetaData(), Column('actor_id...ey('mo...
+    session = <LocalProxy unbound>
+    show_link = Table('show_link', MetaData(), Column('actor_id'...nKey('s...
+
+FILE
+    c:\users\jacob\cs331e\project\cs331e-idb\models.py
+

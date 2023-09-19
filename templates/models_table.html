@@ -1,0 +1,232 @@
+{% extends 'base3.html' %} 
+{% block head %}
+<link rel="stylesheet" type="text/css" href="../static/css/tableModels.css">
+<script src="../static/js/table.js"></script>
+<title>Model</title>
+{% endblock %}
+{% block body %}
+
+{% if type == "A" %}
+<h1>Actor Model</h1>
+<div class="table-responsive">
+   <table id="Mtable" class="table table-bordered">
+    <thead>
+       <tr>
+           <th>
+            <a href="?sort_by=name&sort_order={{ sort_order|reverse_if('name') }}" class="linkBlack" >Name</a>
+            </th>
+           <th>
+            <a href="?sort_by=gender&sort_order={{ sort_order|reverse_if('gender') }}" class="linkBlack">Gender</a>
+           </th>
+           <th>
+            <a href="?sort_by=birthday&sort_order={{ sort_order|reverse_if('birthday') }}" class="linkBlack">Birthday</a>
+           </th>
+           <th>
+            <a href="?sort_by=birthPlace&sort_order={{ sort_order|reverse_if('birthPlace') }}" class="linkBlack">Birthplace</a>
+           </th>
+           <th>
+            <a href="?sort_by=shortBio&sort_order={{ sort_order|reverse_if('shortBio') }}" class="linkBlack">Bio</a>
+           </th>
+       </tr>
+    </thead>
+    <tbody>
+
+    
+       {% for actor in data.items %}
+       <tr>
+           <td>
+               <a href="{{url_for('actor_search', actor=actor.name)}}" class="linkBlack">{{actor.name}}</a>
+           </td>
+           <td>
+               {{actor.gender}}
+           </td>
+           <td>
+               {{actor.birthday}}
+           </td>
+           <td>
+               {{actor.birthPlace}}
+       
+           </td>
+           {% if actor.shortBio == "" %} 
+            <td>-</td>
+            {% else %}
+            <td>{{actor.shortBio}}...</td>
+            {% endif %}
+           
+           
+       </tr>
+       {% endfor %}</tbody>
+   </table>
+</div>
+
+{% endif %}
+
+
+{% if type == "M" %}
+<h1>Movie Model</h1>
+<div>
+    <table id="Mtable" class="table table-bordered">
+        <tr>
+            <th>
+                <a href="?sort_by=title&sort_order={{ sort_order|reverse_if('title') }}" class="linkBlack">Title</a>
+            </th>
+                        <th>
+            <a href="?sort_by=score&sort_order={{ sort_order|
+reverse_if('genre') }}" class="linkBlack">Genre
+            </a>
+            </th>
+            <th>
+                <a href="?sort_by=shortDescription&sort_order={{ sort_order|reverse_if('shortDescription') }}" class="linkBlack">Description</a>
+            </th>
+            <th>
+                <a href="?sort_by=length&sort_order={{ sort_order|reverse_if('length') }}" class="linkBlack">Length</a>
+            </th>
+            <th>
+                <a href="?sort_by=ageRec&sort_order={{ sort_order|reverse_if('ageRec') }}" class="linkBlack">Age Recommendation</a>
+            </th>
+            <th>
+                <a href="?sort_by=score&sort_order={{ sort_order|reverse_if('score') }}" class="linkBlack">Review Score</a>
+            </th>
+            <th>
+            <a href="?sort_by=score&sort_order={{ sort_order|reverse_if('service') }}" class="linkBlack">Service
+            </a>
+            </th>
+        </tr>
+        {% set count = 0 %} 
+        {% for movie in data %} 
+        <tr>
+            <td>
+                <a href="{{url_for('movie_search', movie=movie.title)}}" class="linkBlack">{{movie.title}}</a>
+            </td>
+            <td>
+                {{movie.genre}}
+            </td>
+            {% if movie.shortDescription == "" %} 
+            <td>-</td>
+            {% else %}
+            <td>{{movie.shortDescription}}...</td>
+            {% endif %}
+            
+            
+            <td>
+                {{movie.length}} Minutes
+            </td>
+            <td>
+                {{movie.ageRec}}+ years
+            </td>
+            <td>
+                {{movie.score}}
+            </td>
+            <td>{{movie.service}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endif %}
+
+
+
+
+
+{% if type == "S" %}
+<h1>TV Show Model</h1>
+<div>
+    <table id="Mtable" class="table table-bordered">
+        <tr>
+            <th>
+                <a href="?sort_by=title&sort_order={{ sort_order|reverse_if('title') }}" class="linkBlack" >Title</a>
+            </th>
+            <th>
+                <a href="?sort_by=title&sort_order={{ sort_order|reverse_if
+('genre') }}" class="linkBlack">Genre</a>
+            </th>
+            <th>
+                <a href="?sort_by=shortDescription&sort_order={{ sort_order|reverse_if('shortDescription') }}" class="linkBlack">Description</a>
+            </th>
+            <th>
+                <a href="?sort_by=service&sort_order={{ sort_order|reverse_if('service') }}" class="linkBlack">Service</a>
+            </th>
+            <th>
+                <a href="?sort_by=episodes&sort_order={{ sort_order|reverse_if('episodes') }}" class="linkBlack">No. of Episodes</a>
+            </th>
+            <th>
+                <a href="?sort_by=score&sort_order={{ sort_order|reverse_if('score') }}" class="linkBlack">Review Score</a>
+            </th>
+            <th>
+                <a href="?sort_by=title&sort_order={{ sort_order|reverse_if
+('language') }}" class="linkBlack">Language</a>
+            </th>
+
+            <th>
+                <a href="?sort_by=title&sort_order={{ sort_order|reverse_if
+('ageRec') }}" class="linkBlack">Age Rec.</a>
+            </th>
+        </tr>
+        {% for show in data %}
+        <tr>
+            <td>
+                <a href="{{url_for('show_search', show=show.title)}}" class="linkBlack">{{show.title}}</a>
+            </td>
+            <td>
+                {{show.genre}}
+            </td>
+            
+                {% if show.shortDescription == "" %} 
+                <td>No bio available</td>
+                {% else %}
+                <td>{{show.shortDescription}}...</td>
+                {% endif %}
+            
+            <td>
+                {{show.service}}
+            </td>
+            <td>
+                {{show.episodes}}
+            </td>
+            <td>
+                {{show.score}}
+            </td>
+            <td>
+                {{show.language}}glish
+            </td>
+            <td>
+                {{show.ageRec}}+ years
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+{% endif %}
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        {% if data.items.has_prev %}
+            <li class="page-item">
+                <a class="page-link" href="{{ url_for('models', type= type, sort_by=sort_by, sort_order=sort_order, page=data.prev_num) }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+        {% endif %}
+        {% for num in data.iter_pages(left_edge=1, right_edge=1, left_current=2, right_current=2) %}
+            {% if num %}
+                {% if data.page == num %}
+                    <li class="page-item active"><a class="page-link" href="#">{{ num }}</a></li>
+                {% else %}
+                    <li class="page-item"><a class="page-link" href="{{ url_for('models', type=type, sort_by=sort_by,sort_order=sort_order, page=num) }}">{{ num }}</a></li>
+                {% endif %}
+            {% else %}
+                <li class="page-item disabled"><span class="page-link">&hellip;</span></li>
+            {% endif %}
+        {% endfor %}
+        {% if data.items.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="{{ url_for('models', type = type, sort_by=sort_by,sort_order=sort_order, page=data.next_num) }}" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
+
+{% endblock %}

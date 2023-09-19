@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="{{url_for('index')}}">StreamingAvailability</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" 
+        aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="{{url_for('index')}}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('actors')}}">Actors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('movies')}}"><u>Movies</u></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('tvshows')}}">TV Shows</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('about')}}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('models')}}">Models</a>
+                </li>
+                </ul>
+              </div>
+          </nav>
+        <div style="margin: 1%;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/25/Despicable_Me_Soundtrack.jpg" 
+                            alt="Picture of the Despicable Me art"
+                            class="card-img-top mx-auto"
+                            style="max-height: 350px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Despicable Me</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Description</th>
+                                        <td>Longtime supervillain Gru formulates a plan to steal the Moon. Meanwhile, he starts a family by adopting three orphan girls, and must decide where his commitments lie.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Director</th>
+                                        <td>Chris Renaud and Pierre Coffin</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Length</th>
+                                        <td>95</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MPAA Rating</th>
+                                        <td>PG</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reviews</th>
+                                        <td>7.6</td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Cast</th>
+                                        <td><a href="{{url_for('actors')}}">Steve Carell</a>, Jason Segel, Russell Brand, Julie Andrews, Will Arnett, Kristen Wiig, Miranda Cosgrove, Dana Gaier, Elsie Fisher</td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Streaming Services</th>
+										<td><a href="https://www.peacocktv.com/" target="_blank">Peacock TV</a>, <a href="https://watch.spectrum.net" target="_blank">Spectrum TV</a></td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Post Credit Scenes</th>
+                                        <td>False</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+				<br>
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://e.snmc.io/i/1200/s/ea975d4075849779100a335ec7fa096d/1458626"
+                            alt="Picture of the The 40-Year-Old Virgin art"
+                            class="card-img-top mx-auto"
+                            style="max-height: 350px;">
+                        <div class="card-body">
+                            <h3 class="card-title">The 40-Year-Old Virgin</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Description</th>
+                                        <td>Goaded by his buddies, a nerdy guy who's never 'done the deed' only finds the pressure mounting when he meets a single mother.
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Director</th>
+                                        <td>Judd Apatow</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Length</th>
+                                        <td>116</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MPAA Rating</th>
+                                        <td>R</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reviews</th>
+                                        <td>7.1</td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Cast</th>
+                                        <td><a href="{{url_for('actors')}}">Steve Carell</a>, Catherine Keener, Paul Rudd, Romany Malco, Seth Rogen, Elizabeth Banks, Leslie Mann, Jane Lynch, Gerry Bednob, Shelley Malil, Kat Dennings, Jordan Masterson, Chelsea Smith</td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Streaming Services</th>
+										<td><a href="https://www.peacocktv.com/" target="_blank">Peacock TV</a>, <a href="https://www.directv.com/stream/live/" target="_blank">Direct TV</a>, <a href="https://www.hulu.com" target="_blank">Hulu</a>, <a href="https://www.fubo.tv" target="_blank">Fubo</a>, <a href="https://www.usanetwork.com" target="_blank">usa</a></td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Post Credit Scenes</th>
+                                        <td>False</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            <br>
+            <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://hbomax-images.warnermediacdn.com/images/GYZ9c7g1rCLF4YAEAAAAI/tile?size=640x360&partner=hbomaxcom&v=36f9f64fa8d25b2745f3bf5851b710f8&host=art-gallery.api.hbo.com&language=en-us" 
+                            alt="Picture of The Big Short art"
+                            class="card-img-top mx-auto"
+                            style="max-height: 350px;">
+                        <div class="card-body">
+                            <h3 class="card-title">The Big Short</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Description</th>
+                                        <td>In 2006-2007 a group of investors bet against the US mortgage market. In their research, they discover how flawed and corrupt the market is.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Director</th>
+                                        <td>Adam McKay</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Length</th>
+                                        <td>130</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MPAA Rating</th>
+                                        <td>R</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reviews</th>
+                                        <td>7.8</td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Cast</th>
+                                        <td><a href="{{url_for('actors')}}">Steve Carell</a>, Ryan Gosling, Rudy Eisenzopf, Casey Groves, Charlie Talbert, Harold Gervais, Maria Frangos, Christian Bale, Tracy Letts, Marisa Tomei, Jeremy Strong, Rafe Spall, Brad Pitt, Selena Gomez</td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Streaming Services</th>
+										<td>None free</td>
+                                    </tr>
+									<tr>
+                                        <th scope="row">Post Credit Scenes</th>
+                                        <td>False</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>

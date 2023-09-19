@@ -1,0 +1,76 @@
+<html>
+
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="../static/css/splash.css">
+    </head>
+    <body>
+        <div class="card-body">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="{{url_for('index')}}">StreamingAvailability</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" >
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{url_for('index')}}"><u>Home</u></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{url_for('actors')}}">Actors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{url_for('movies')}}">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{url_for('tvshows')}}">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{url_for('about')}}">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="{{url_for('models', type='All')}}">Models</a>
+                        </li>
+                        </ul>
+                  </div>
+              </nav>
+                <div>    
+                    <img src="../static/img/coverImg3.png" class="img-fluid imgfilter" alt="...">
+                    <div>
+                        <p class ="coverText desktop">Welcome!</p>
+                        <p class="coverText2 desktop">Look up your favorite movies, tv shows, or actors and find out which streaming 
+                            service it is available to watch!</p>
+                    </div>
+                </div>
+                <div class="container text-center" >
+                    <div class="row">
+                        <div class="col">
+                            <a href="{{url_for('actors')}}">
+                                <button type="button" class="btn btn-outline-info btn-lg" >Actors</button>
+                            </a>
+                            
+                        </div>
+                        <div class="col">
+                            <a href="{{url_for('movies')}}">                  
+                                <button type="button" class="btn btn-outline-info btn-lg">Movies</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="{{url_for('tvshows')}}">
+                                <button type="button" class="btn btn-outline-info btn-lg">TV Shows</button>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </body>
+    <footer class="card-footer">
+        <div>
+            Footer
+        </div>
+    </footer>
+</html>

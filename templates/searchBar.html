@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/searchbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <form action="/movies" method="GET" id="search-form">
+        <div class="row">
+            <div class="col-6">
+                <input name="search" type="text" class="form-control" placeholder="Search">
+            </div>
+            <div class="col-2">
+                <select class="select-custom w-100" name="movtv" id="movtv-select">
+                    <option value="movie">Movie</option>
+                    <option value="tv">TV Show</option>
+                </select>
+            </div>
+            <div class="col-2 text-center">
+                <div class="dropdown">
+                    <button disabled class="btn btn-light w-100 dropbtn">Services: default (all)</button>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <div class="checkb">
+                            <label for="amazon">Amazon:</label><input name="service" type="checkbox" id="amazon" value="amazon"/>
+                        </div>
+                        <div class="checkb">
+                            <label for="disney">Disney:</label><input name="service" type="checkbox" id="disney" value="disney"/>
+                        </div>
+                        <div class="checkb">
+                            <label for="hbo">HBO Max:</label><input name="service" type="checkbox" id="hbo" value="hbo"/>
+                        </div>
+                        <div class="checkb">
+                            <label for="hulu">Hulu:</label><input name="service" type="checkbox" id="hulu" value="hulu"/>
+                        </div>
+                        <div class="checkb">
+                            <label for="apple">Apple:</label><input name="service" type="checkbox" id="apple" value="apple"/>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-2 text-center">
+                <button class="btn btn-primary w-100" type="submit"><span class="glyphicon 
+                    glyphicon-search"></span>Search</button>
+            </div>
+        </div>
+    </form>
+    <div><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio deleniti, maxime velit quasi delectus at earum ea accusantium repellat aliquid laudantium exercitationem debitis, facere expedita ab, iusto beatae ullam!</h1></div>
+    <script>
+        $(document).ready(function() {
+            var movtvSelect = $('#movtv-select');
+            var searchForm = $('#search-form');
+
+            movtvSelect.on('change', function() {
+                var movtvValue = movtvSelect.val();
+
+                if (movtvValue === 'movie') {
+                    searchForm.attr('action', '/movies');
+                } else if (movtvValue === 'tv') {
+                    searchForm.attr('action', '/tvshows');
+                }
+            });
+        });
+
+        function toggleMenu() {
+            var menu = $('#dropdown-content');
+            if (menu.attr('display') == 'none') {
+                menu.attr('display') == 'block';
+            } else {
+                menu.attr('display') == 'none';
+            }
+        };
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+

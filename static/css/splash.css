@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+.coverText{
+    position:absolute;
+    size: 100px;
+    color:white;
+    top: 160px;
+    left:5%;
+    font-size: 120px;
+    font-weight:700;
+ 
+
+}
+
+.coverText2{
+    position:absolute;
+    color:white;
+    top: 325px;
+    left:5%;
+    font-weight:600;
+}
+
+.imgfilter{
+    filter:blur(1px)
+}
+
+@media (max-width: 700px) {
+    /* mobile CSS: hide .desktop div */
+    .desktop {
+      display: none
+    }
+  }
+
+

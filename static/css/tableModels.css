@@ -1,0 +1,36 @@
+/* *{
+    color:black;
+} */
+a{
+    text-decoration: none;
+    /* color:black; */
+}
+
+.modelC{
+    cursor: pointer;
+    border: 2px solid rgb(210, 210, 210);
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+#Mtable{
+    border-radius: 4px;
+}
+
+#Mtable th {
+    background-color: #eee;
+    cursor: pointer;
+    
+  }
+
+#Mtable td{
+    color: black
+}
+
+.linkBlack {
+    color:black;
+}
+
+
+
+

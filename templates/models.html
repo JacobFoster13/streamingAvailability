@@ -1,0 +1,35 @@
+{% extends 'base3.html' %} 
+{% block head %} 
+<link rel="stylesheet" type="text/css" href="../static/css/tableModels.css">
+{% endblock %} 
+{% block body %}
+
+
+<div class = "row text-center" style="height: 200px;">
+    <div class="col-lg" >
+        
+        <a href="{{url_for('models', type='Actor')}}" class="navCard">
+        <div class="card h-100 modelC" style="margin-top: 2%; align-items: center; justify-content: center;">
+            <h1 class="linkBlack">Actors Model</h1>
+        </div>
+        </a>
+    </div>
+
+
+    <div class="col-lg">
+            <a href="{{url_for('models', type = 'Movie')}}" class="navCard">
+                <div class="card h-100 modelC" style="margin-top: 2%; align-items: center; justify-content: center;">
+                    <h1 class="linkBlack">Movies Model</h1>
+                </div>
+            </a>
+    </div>
+
+    <div class="col-lg">
+            <a href="{{url_for('models', type = 'Show')}}" class="navCard">
+                <div class="card h-100 modelC" style="margin-top: 2%; align-items: center; justify-content: center;">
+                    <h1 class="linkBlack">TV Shows Model</h1>
+                </div>
+            </a>
+    </div>
+
+{% endblock %}

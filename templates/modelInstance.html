@@ -1,0 +1,141 @@
+{% extends 'base3.html' %} 
+{% block head %} 
+<link rel="stylesheet" type="text/css" href="../static/css/tableModels.css">
+{% endblock %} 
+{% block body %}
+
+{% if type == "A" %}
+<div class="card h-100 " style="margin-top: 2%; border: none">
+    <img src="{{data.image}}" 
+        alt=""
+        onerror="this.src='../static/img/blankProfilePic.png'"
+        class="card-img-top mx-auto"
+        style="max-height: 350px; max-width: 185px;">
+    <div class="card-body">
+        <h3 class="card-title">{{data.name}}</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Attribute</th>
+                    <th scope="col">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Bio</th>
+                    {% if data.bio %}
+                    <td>{{data.bio}}</td>
+                    {%else%}
+                    <td>They are a unique talent!</td>
+                    {%endif%}
+                </tr>
+                <tr>
+                    <th scope="row">Movies</th>
+                    {% if data.movies == [] %}
+                    <td>Movies not available</td>
+                    {% else %}
+                    <td>
+                    {% for movie in data.movies %}
+                    <span><a href="{{url_for('movies')}}" >{{movie.title}}</a>
+                        {% if not loop.last %}
+                        ,
+                        {% endif %}
+                        </span>
+                    {% endfor %}
+                    
+                    
+                </td>
+                    {% endif %}
+                </tr>
+                <tr>
+                    <th scope="row">TV Shows</th>
+                    {% if data.shows == [] %}
+                    <td>TV shows not available</td>
+                    {% else %}
+                    <td>
+                    {% for show in data.shows %}
+                    <span><a href="{{url_for('tvshows')}}">{{show.title}}</a>
+                    {% if not loop.last %}
+                        ,
+                    {% endif %}
+                    </span>
+                    {%endfor%}
+                    </td>
+                    {%endif%}
+                </tr>
+                <tr>
+                    <th scope="row">Birthday</th>
+                    <td>{{data.birthday}}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Birth Place</th>
+                    <td>{{data.birthPlace}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endif %}
+
+{% if type == "M" %} 
+
+<h4 class="modal-title" id="exampleModalLabel" >{{data.title}}</h4>
+</div>
+<div class="modal-body">
+<p>{{data.description}}</p>
+<hr>
+<p><strong>Minimum Viewing Age: </strong> {{data.ageRec}}</p>
+<p><strong>Available on: </strong> <a href={{data.link}} target="_blank">{{data.service.title()}}
+</a></p>
+<p>
+    {% if data.acts == [] %}
+        <span>Cast Not Available</span>
+    {% else %}
+        <p><strong>Stars: </strong>
+            {% for j in data.acts %}
+                <span><a href="{{url_for('models')}}">{{j.name}}</a>, </span>
+            {% endfor %}
+        </p>
+    {% endif %}
+</p>
+<p><strong>Ratings: </strong> {{data.score}}</p>
+<p><strong>Genre: </strong> {{data.genre}}</p>
+<p><strong>Runtime: </strong> {{data.length}} minutes</p>
+<p><strong>Language: </strong> {{data.language.title()}}glish</p>
+{% endif %}
+
+
+
+{% if type == "S" %} 
+<h4 class="modal-title" id="exampleModalLabel">{{data.title}}</h4>
+<p>{{data.description}}</p>
+<hr>
+<p><strong>Minimum Viewing Age: </strong> {{data.ageRec}}</p>
+<p><strong>Available on: </strong> <a href={{data.link}} target="_blank">{{data.service.title()}}</a></p>
+<p>
+    {% if data.acts == [] %}
+        <span>Cast Not Available</span>
+    {% else %}
+        <p><strong>Stars: </strong>
+            {% for j in data.acts %}
+                <span>{{j.name}}, </span>
+            {% endfor %}
+        </p>
+    {% endif %}
+</p>
+<p><strong>Ratings: </strong> {{data.score}}</p>
+<p><strong>Genre: </strong> {{data.genre}}</p>
+<p><strong>Seasons: </strong> {{data.seasons}}</p>
+<p><strong>Episodes: </strong> {{data.episodes}}</p>
+<p><strong>Language: </strong> {{data.language.title()}}</p>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+ </div>
+  </div>
+</div>
+                   </div>
+{% endif %}
+{% endblock %}

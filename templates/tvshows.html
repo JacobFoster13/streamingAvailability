@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tv shows</title>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="{{url_for('index')}}">StreamingAvailability</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('actors')}}">Actors</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('movies')}}">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('tvshows')}}"><u>TV Shows</u></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="{{url_for('about')}}">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{url_for('models')}}">Models</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <h1>TV Shows</h1>
+        <div style="margin: 1%;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fnetflixlife.com%2Ffiles%2Fimage-exchange%2F2021%2F04%2Fie_64551.jpeg" 
+                            alt="Picture of the Office cover art" 
+                            class="card-img-top mx-auto"
+                            style="max-height: 350px;">
+                        <div class="card-body">
+                            <h3 class="card-title">The Office</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Description</th>
+                                        <td>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Cast</th>
+                                        <td><a href="{{url_for('actors')}}">Steve Carell</a>, Jenna Fischer, John Krasinski, Rainn Wilson, Leslie David Baker, Brian Baumgartner, Angela Kinsey, Kate Flannery, Phyllis Smith, Creed Bratton, Oscar Nunez, BJ Novak, Mindy Kaling, Ed Helms, Paul Lieberstein, Craig Robinson, Ellie Kemper, Zach Woods</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Number of Seasons</th>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Total Number of Episodes</th>
+                                        <td>188</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Streaming Services Where Available</th>
+                                        <td><a href="https://www.peacocktv.com/" target="_blank">Peacock</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Filming Status</th>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MPA Rating</th>
+                                        <td>TV-14</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reviews</th>
+                                        <td>IMDB: 9.0/10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://i0.wp.com/lezwatchtv.com/wp-content/uploads/2017/11/scandal.jpeg?fit=960%2C400&ssl=1" 
+                                    alt="Scandal cover art"
+                                    class="card-img-top mx-auto"
+                                    style="max-height: 350px; max-width: auto;">
+                        <div class="card-body">
+                            <h3 class="card-title">Scandal</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Description</th>
+                                        <td>A former White House Communications Director starts her own crisis management firm only to realize her clients are not the only ones with secrets.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Cast</th>
+                                        <td>Kerry Washington, Darby Stanchfield, Katie Lowes, Guillermo Diaz, Jeff Perry, Joshua Malina, Bellamy Young, Tony Goldwyn, Scott Foley, Joe Morton, George Newbern, Cornelius Smith Jr, Portia de Rossi, Columbus Short, Kate Burton</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Number of Seasons</th>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Total Number of Episodes</th>
+                                        <td>124</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Streaming Services Where Available</th>
+                                        <td><a href="https://www.hulu.com/" target="_blank">Hulu</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Filming Status</th>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MPA Rating</th>
+                                        <td>TV-14</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reviews</th>
+                                        <td>IMDB: 7.7/10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card h-100 border-primary" style="margin-top: 2%;">
+                        <img src="https://miro.medium.com/max/960/1*qK_bkpuRBjdzB5_FfoIvfQ.jpeg" 
+                            alt="Picture of South Park cover art" 
+                            class="card-img-top mx-auto">
+                        <div class="card-body">
+                            <h3 class="card-title">South Park</h3>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Attribute</th>
+                                        <th scope="col">Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Description</th>
+                                        <td>Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Cast</th>
+                                        <td>Trey Parker, Matt Stone, Isaac Hayes, Mona Marshall, April Stewart, Adrien Beard, Eliza Schneider, Jennifer Howell, Jessica Makinson, Mary Kay Bergman, Betty Boogie Parker, </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Number of Seasons</th>
+                                        <td>26</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Total Number of Episodes</th>
+                                        <td>322</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Streaming Services Where Available</th>
+                                        <td><a href="https://www.hbomax.com/" target="_blank">HBO Max</a>, 
+                                            <a href="https://www.amazon.com/Prime-Video/b?node=2676882011" target="_blank">Prime Video</a>, 
+                                            <a href="https://www.fubo.tv/welcome" target="_blank">FuboTV</a>, 
+                                            <a href="https://www.cc.com/shows/south-park" target="_blank">Comedy Central</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Filming Status</th>
+                                        <td>Currently Filming</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">MPA Rating</th>
+                                        <td>TV-14</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Reviews</th>
+                                        <td>IMDB: 8.7/10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <!-- <br>
+
+        <h3>The Office</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Attribute</th>
+                    <th scope="col">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Description</th>
+                    <td>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Picture</th>
+                    <td>Coming later</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cast</th>
+                    <td>Steve Carell, Jenna Fischer, John Krasinski, Rainn Wilson, Leslie David Baker, Brian Baumgartner, Angela Kinsey, Kate Flannery, Phyllis Smith, Creed Bratton, Oscar Nunez, BJ Novak, Mindy Kaling, Ed Helms, Paul Lieberstein, Craig Robinson, Ellie Kemper, Zach Woods</td>
+                </tr>
+                <tr>
+                    <th scope="row">Number of Seasons</th>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Number of Episodes</th>
+                    <td>188</td>
+                </tr>
+                <tr>
+                    <th scope="row">Streaming Services Where Available</th>
+                    <td>Peacock</td>
+                </tr>
+                <tr>
+                    <th scope="row">Filming Status</th>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <th scope="row">MPA Rating</th>
+                    <td>TV-14</td>
+                </tr>
+                <tr>
+                    <th scope="row">Reviews</th>
+                    <td>IMDB: 9.0/10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h3>South Park</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Attribute</th>
+                    <th scope="col">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Description</th>
+                    <td>Follows the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Picture</th>
+                    <td>Coming later</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cast</th>
+                    <td>Trey Parker, Matt Stone, Isaac Hayes, Mona Marshall, April Stewart, Adrien Beard, Eliza Schneider, Jennifer Howell, Jessica Makinson, Mary Kay Bergman, Betty Boogie Parker, </td>
+                </tr>
+                <tr>
+                    <th scope="row">Number of Seasons</th>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Number of Episodes</th>
+                    <td>322</td>
+                </tr>
+                <tr>
+                    <th scope="row">Streaming Services Where Available</th>
+                    <td>HBO Max, Prime Video, Fubo, Comedy Central</td>
+                </tr>
+                <tr>
+                    <th scope="row">Filming Status</th>
+                    <td>Currently Filming</td>
+                </tr>
+                <tr>
+                    <th scope="row">MPA Rating</th>
+                    <td>TV-14</td>
+                </tr>
+                <tr>
+                    <th scope="row">Reviews</th>
+                    <td>IMDB: 8.7/10</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h3>Scandal</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Attribute</th>
+                    <th scope="col">Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Description</th>
+                    <td>A former White House Communications Director starts her own crisis management firm only to realize her clients are not the only ones with secrets.</td>
+                </tr>
+                <tr>
+                    <th scope="row">Picture</th>
+                    <td>Coming later</td>
+                </tr>
+                <tr>
+                    <th scope="row">Cast</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Number of Seasons</th>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Number of Episodes</th>
+                    <td>124</td>
+                </tr>
+                <tr>
+                    <th scope="row">Streaming Services Where Available</th>
+                    <td>Hulu</td>
+                </tr>
+                <tr>
+                    <th scope="row">Filming Status</th>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <th scope="row">MPA Rating</th>
+                    <td>TV-14</td>
+                </tr>
+                <tr>
+                    <th scope="row">Reviews</th>
+                    <td>IMDB: 7.7/10</td>
+                </tr>
+            </tbody>
+        </table> -->
+
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
